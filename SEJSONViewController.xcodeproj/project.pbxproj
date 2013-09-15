@@ -14,12 +14,33 @@
 		589840A417E6128200B61749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589840A317E6128200B61749 /* UIKit.framework */; };
 		589840A517E6128200B61749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898409217E6128200B61749 /* Foundation.framework */; };
 		589840A817E6128200B61749 /* libSEJSONViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898408F17E6128200B61749 /* libSEJSONViewController.a */; };
-		589840AE17E6128200B61749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589840AC17E6128200B61749 /* InfoPlist.strings */; };
-		589840B117E6128200B61749 /* SEJSONViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589840B017E6128200B61749 /* SEJSONViewControllerTests.m */; };
+		589840BF17E612D800B61749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589840A317E6128200B61749 /* UIKit.framework */; };
+		589840C017E612D800B61749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898409217E6128200B61749 /* Foundation.framework */; };
+		589840C217E612D800B61749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589840C117E612D800B61749 /* CoreGraphics.framework */; };
+		589840DE17E6158100B61749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589840D917E6158100B61749 /* InfoPlist.strings */; };
+		589840DF17E6158100B61749 /* SEJSONViewControllerTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589840DB17E6158100B61749 /* SEJSONViewControllerTests-Info.plist */; };
+		589840E017E6158200B61749 /* SEJSONViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589840DD17E6158100B61749 /* SEJSONViewControllerTests.m */; };
+		589840ED17E6162D00B61749 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589840E217E6162D00B61749 /* Default-568h@2x.png */; };
+		589840EE17E6162D00B61749 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 589840E317E6162D00B61749 /* Default.png */; };
+		589840EF17E6162D00B61749 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589840E417E6162D00B61749 /* Default@2x.png */; };
+		589840F017E6162D00B61749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589840E517E6162D00B61749 /* InfoPlist.strings */; };
+		589840F117E6162D00B61749 /* Example-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 589840E717E6162D00B61749 /* Example-Info.plist */; };
+		589840F217E6162D00B61749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589840EA17E6162D00B61749 /* AppDelegate.m */; };
+		589840F317E6162D00B61749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589840EC17E6162D00B61749 /* main.m */; };
+		589840F517E6176F00B61749 /* SEJSONViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 589840F417E6176F00B61749 /* SEJSONViewController.podspec */; };
+		589840F717E61B9F00B61749 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 589840F617E61B9F00B61749 /* data.json */; };
+		589840FA17E61E2700B61749 /* libSEJSONViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898408F17E6128200B61749 /* libSEJSONViewController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		589840A617E6128200B61749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5898408717E6128200B61749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5898408E17E6128200B61749;
+			remoteInfo = SEJSONViewController;
+		};
+		589840F817E61E2100B61749 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5898408717E6128200B61749 /* Project object */;
 			proxyType = 1;
@@ -44,16 +65,29 @@
 /* Begin PBXFileReference section */
 		5898408F17E6128200B61749 /* libSEJSONViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSEJSONViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5898409217E6128200B61749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5898409617E6128200B61749 /* SEJSONViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SEJSONViewController-Prefix.pch"; sourceTree = "<group>"; };
 		5898409717E6128200B61749 /* SEJSONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEJSONViewController.h; sourceTree = "<group>"; };
 		5898409917E6128200B61749 /* SEJSONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEJSONViewController.m; sourceTree = "<group>"; };
 		589840A017E6128200B61749 /* SEJSONViewControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEJSONViewControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		589840A117E6128200B61749 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		589840A317E6128200B61749 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		589840AB17E6128200B61749 /* SEJSONViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SEJSONViewControllerTests-Info.plist"; sourceTree = "<group>"; };
-		589840AD17E6128200B61749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		589840AF17E6128200B61749 /* SEJSONViewControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEJSONViewControllerTests.h; sourceTree = "<group>"; };
-		589840B017E6128200B61749 /* SEJSONViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEJSONViewControllerTests.m; sourceTree = "<group>"; };
+		589840BE17E612D800B61749 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589840C117E612D800B61749 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		589840DA17E6158100B61749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		589840DB17E6158100B61749 /* SEJSONViewControllerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SEJSONViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		589840DC17E6158100B61749 /* SEJSONViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEJSONViewControllerTests.h; sourceTree = "<group>"; };
+		589840DD17E6158100B61749 /* SEJSONViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEJSONViewControllerTests.m; sourceTree = "<group>"; };
+		589840E217E6162D00B61749 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		589840E317E6162D00B61749 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		589840E417E6162D00B61749 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		589840E617E6162D00B61749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		589840E717E6162D00B61749 /* Example-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
+		589840E917E6162D00B61749 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		589840EA17E6162D00B61749 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		589840EB17E6162D00B61749 /* Example-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
+		589840EC17E6162D00B61749 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		589840F417E6176F00B61749 /* SEJSONViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SEJSONViewController.podspec; sourceTree = "<group>"; };
+		589840F617E61B9F00B61749 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		58B20DB117E635DA008D6761 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +110,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		589840BB17E612D800B61749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589840FA17E61E2700B61749 /* libSEJSONViewController.a in Frameworks */,
+				589840BF17E612D800B61749 /* UIKit.framework in Frameworks */,
+				589840C017E612D800B61749 /* Foundation.framework in Frameworks */,
+				589840C217E612D800B61749 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5898408617E6128200B61749 = {
 			isa = PBXGroup;
 			children = (
+				58B20DB117E635DA008D6761 /* README.md */,
+				589840F417E6176F00B61749 /* SEJSONViewController.podspec */,
+				589840D817E6158100B61749 /* Tests */,
 				5898409417E6128200B61749 /* SEJSONViewController */,
-				589840A917E6128200B61749 /* SEJSONViewControllerTests */,
+				589840C317E612D800B61749 /* Example */,
 				5898409117E6128200B61749 /* Frameworks */,
 				5898409017E6128200B61749 /* Products */,
 			);
@@ -94,6 +142,7 @@
 			children = (
 				5898408F17E6128200B61749 /* libSEJSONViewController.a */,
 				589840A017E6128200B61749 /* SEJSONViewControllerTests.octest */,
+				589840BE17E612D800B61749 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +153,7 @@
 				5898409217E6128200B61749 /* Foundation.framework */,
 				589840A117E6128200B61749 /* SenTestingKit.framework */,
 				589840A317E6128200B61749 /* UIKit.framework */,
+				589840C117E612D800B61749 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,36 +163,52 @@
 			children = (
 				5898409717E6128200B61749 /* SEJSONViewController.h */,
 				5898409917E6128200B61749 /* SEJSONViewController.m */,
-				5898409517E6128200B61749 /* Supporting Files */,
 			);
 			path = SEJSONViewController;
 			sourceTree = "<group>";
 		};
-		5898409517E6128200B61749 /* Supporting Files */ = {
+		589840C317E612D800B61749 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				5898409617E6128200B61749 /* SEJSONViewController-Prefix.pch */,
+				589840E117E6162D00B61749 /* Resources */,
+				589840E817E6162D00B61749 /* Source */,
 			);
-			name = "Supporting Files";
+			path = Example;
 			sourceTree = "<group>";
 		};
-		589840A917E6128200B61749 /* SEJSONViewControllerTests */ = {
+		589840D817E6158100B61749 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				589840AF17E6128200B61749 /* SEJSONViewControllerTests.h */,
-				589840B017E6128200B61749 /* SEJSONViewControllerTests.m */,
-				589840AA17E6128200B61749 /* Supporting Files */,
+				589840D917E6158100B61749 /* InfoPlist.strings */,
+				589840DB17E6158100B61749 /* SEJSONViewControllerTests-Info.plist */,
+				589840DC17E6158100B61749 /* SEJSONViewControllerTests.h */,
+				589840DD17E6158100B61749 /* SEJSONViewControllerTests.m */,
 			);
-			path = SEJSONViewControllerTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		589840AA17E6128200B61749 /* Supporting Files */ = {
+		589840E117E6162D00B61749 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				589840AB17E6128200B61749 /* SEJSONViewControllerTests-Info.plist */,
-				589840AC17E6128200B61749 /* InfoPlist.strings */,
+				589840F617E61B9F00B61749 /* data.json */,
+				589840E217E6162D00B61749 /* Default-568h@2x.png */,
+				589840E317E6162D00B61749 /* Default.png */,
+				589840E417E6162D00B61749 /* Default@2x.png */,
+				589840E517E6162D00B61749 /* InfoPlist.strings */,
+				589840E717E6162D00B61749 /* Example-Info.plist */,
 			);
-			name = "Supporting Files";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		589840E817E6162D00B61749 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				589840E917E6162D00B61749 /* AppDelegate.h */,
+				589840EA17E6162D00B61749 /* AppDelegate.m */,
+				589840EB17E6162D00B61749 /* Example-Prefix.pch */,
+				589840EC17E6162D00B61749 /* main.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +250,24 @@
 			productReference = 589840A017E6128200B61749 /* SEJSONViewControllerTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		589840BD17E612D800B61749 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589840D517E612D800B61749 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				589840BA17E612D800B61749 /* Sources */,
+				589840BB17E612D800B61749 /* Frameworks */,
+				589840BC17E612D800B61749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589840F917E61E2100B61749 /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 589840BE17E612D800B61749 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +291,7 @@
 			targets = (
 				5898408E17E6128200B61749 /* SEJSONViewController */,
 				5898409F17E6128200B61749 /* SEJSONViewControllerTests */,
+				589840BD17E612D800B61749 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +301,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589840AE17E6128200B61749 /* InfoPlist.strings in Resources */,
+				589840DE17E6158100B61749 /* InfoPlist.strings in Resources */,
+				589840DF17E6158100B61749 /* SEJSONViewControllerTests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589840BC17E612D800B61749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589840ED17E6162D00B61749 /* Default-568h@2x.png in Resources */,
+				589840EE17E6162D00B61749 /* Default.png in Resources */,
+				589840EF17E6162D00B61749 /* Default@2x.png in Resources */,
+				589840F017E6162D00B61749 /* InfoPlist.strings in Resources */,
+				589840F117E6162D00B61749 /* Example-Info.plist in Resources */,
+				589840F517E6176F00B61749 /* SEJSONViewController.podspec in Resources */,
+				589840F717E61B9F00B61749 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589840B117E6128200B61749 /* SEJSONViewControllerTests.m in Sources */,
+				589840E017E6158200B61749 /* SEJSONViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589840BA17E612D800B61749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589840F217E6162D00B61749 /* AppDelegate.m in Sources */,
+				589840F317E6162D00B61749 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,13 +372,26 @@
 			target = 5898408E17E6128200B61749 /* SEJSONViewController */;
 			targetProxy = 589840A617E6128200B61749 /* PBXContainerItemProxy */;
 		};
+		589840F917E61E2100B61749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5898408E17E6128200B61749 /* SEJSONViewController */;
+			targetProxy = 589840F817E61E2100B61749 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		589840AC17E6128200B61749 /* InfoPlist.strings */ = {
+		589840D917E6158100B61749 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				589840AD17E6128200B61749 /* en */,
+				589840DA17E6158100B61749 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		589840E517E6162D00B61749 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589840E617E6162D00B61749 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -301,7 +423,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -324,7 +446,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -335,7 +457,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/SEJSONViewController.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SEJSONViewController/SEJSONViewController-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -347,7 +468,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/SEJSONViewController.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SEJSONViewController/SEJSONViewController-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -384,6 +504,41 @@
 			};
 			name = Release;
 		};
+		589840D617E612D800B61749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Source/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Resources/Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		589840D717E612D800B61749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Source/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Resources/Example-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +558,7 @@
 				589840B617E6128200B61749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		589840B717E6128200B61749 /* Build configuration list for PBXNativeTarget "SEJSONViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +567,16 @@
 				589840B917E6128200B61749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589840D517E612D800B61749 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589840D617E612D800B61749 /* Debug */,
+				589840D717E612D800B61749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
