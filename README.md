@@ -1,4 +1,4 @@
-# SEJSONViewController
+# SEJSONViewController [![Build Status](https://travis-ci.org/SergioEstevao/SEJSONViewController.png?branch=master)](https://travis-ci.org/SergioEstevao/SEJSONViewController)
 
 Easily browse the contents of JSON file.
 
