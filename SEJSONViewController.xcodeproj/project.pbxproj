@@ -231,9 +231,9 @@
 			productReference = 5898408F17E6128200B61749 /* libSEJSONViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5898409F17E6128200B61749 /* SEJSONViewControllerTests */ = {
+		5898409F17E6128200B61749 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 589840B717E6128200B61749 /* Build configuration list for PBXNativeTarget "SEJSONViewControllerTests" */;
+			buildConfigurationList = 589840B717E6128200B61749 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				5898409B17E6128200B61749 /* Sources */,
 				5898409C17E6128200B61749 /* Frameworks */,
@@ -245,7 +245,7 @@
 			dependencies = (
 				589840A717E6128200B61749 /* PBXTargetDependency */,
 			);
-			name = SEJSONViewControllerTests;
+			name = Tests;
 			productName = SEJSONViewControllerTests;
 			productReference = 589840A017E6128200B61749 /* SEJSONViewControllerTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -290,7 +290,7 @@
 			projectRoot = "";
 			targets = (
 				5898408E17E6128200B61749 /* SEJSONViewController */,
-				5898409F17E6128200B61749 /* SEJSONViewControllerTests */,
+				5898409F17E6128200B61749 /* Tests */,
 				589840BD17E612D800B61749 /* Example */,
 			);
 		};
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		589840B717E6128200B61749 /* Build configuration list for PBXNativeTarget "SEJSONViewControllerTests" */ = {
+		589840B717E6128200B61749 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				589840B817E6128200B61749 /* Debug */,
