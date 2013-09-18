@@ -482,8 +482,8 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SEJSONViewController/SEJSONViewController-Prefix.pch";
-				INFOPLIST_FILE = "SEJSONViewControllerTests/SEJSONViewControllerTests-Info.plist";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Tests/SEJSONViewControllerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -497,8 +497,8 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SEJSONViewController/SEJSONViewController-Prefix.pch";
-				INFOPLIST_FILE = "SEJSONViewControllerTests/SEJSONViewControllerTests-Info.plist";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Tests/SEJSONViewControllerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
