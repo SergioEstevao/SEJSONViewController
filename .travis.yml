@@ -1,2 +1,2 @@
 language: objective-c
-script: ~/travis-utils/osx-cibuild.sh
+script: xcodebuild -project SEJSONViewController.xcodeproj -scheme SEJSONViewController -sdk iphonesimulator -configuration Release
