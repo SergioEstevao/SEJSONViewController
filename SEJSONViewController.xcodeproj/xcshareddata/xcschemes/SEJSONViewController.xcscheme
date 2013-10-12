@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5898409F17E6128200B61749"
-               BuildableName = "SEJSONViewControllerTests.octest"
+               BuildableName = "Tests.octest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:SEJSONViewController.xcodeproj">
             </BuildableReference>
