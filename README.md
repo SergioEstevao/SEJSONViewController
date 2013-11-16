@@ -6,7 +6,7 @@ SEJSONViewController is tested on iOS 5 and requires ARC. Released under the [MI
 
 ## Example
 
-![Screenshot]
+![Screenshot](http://wp.me/a2rxJ0-73)
 
 Open up the included Xcode project for an example app and the tests.
 
