@@ -8,26 +8,41 @@
 
 #import "SEJSONViewController.h"
 
+static const CGFloat Padding = 20;
+
 @interface SEJSONViewController () {
     id _data;
+    UITableViewCell * _textViewCell;
+    UILabel * _label;
 }
 
 @end
 
 @implementation SEJSONViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+- initWithData:(id) data {
+    return [self initWithStyle:UITableViewStylePlain data:data];
+}
+
+- (id)initWithStyle:(UITableViewStyle)style data:(id) data
 {
     self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
+    if (!self) return nil;
+    // Custom initialization
+    _data = data;
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ( !([_data isKindOfClass:[NSDictionary class]] || [_data isKindOfClass:[NSArray class]])) {
+        [self setupForLeaf:_data];
+    };
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +69,7 @@
         return [_data count];
     }
     
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -72,23 +87,26 @@
         return 1;
     }
     
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ( !([_data isKindOfClass:[NSDictionary class]] || [_data isKindOfClass:[NSArray class]])) {
+        return _textViewCell;
+    };
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
     if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     id obj = _data;
     if ([_data isKindOfClass:[NSArray class]]){
         obj = _data[indexPath.section];
     }
-    
     if ([obj isKindOfClass:[NSDictionary class]]){
         cell.textLabel.text = [obj allKeys][indexPath.row];
         id subObj = obj[cell.textLabel.text];
@@ -121,7 +139,10 @@
     if ([[_data class] isSubclassOfClass:[NSArray class]]){
         return [NSString stringWithFormat:@"%i",section];
     }
-    
+    //check if leaf node
+    if ( !([_data isKindOfClass:[NSDictionary class]] || [_data isKindOfClass:[NSArray class]])) {
+        return @"";
+    };
     return @"Attributes";
 }
 
@@ -130,14 +151,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
+    //check if leaf node
+    if ( !([_data isKindOfClass:[NSDictionary class]] || [_data isKindOfClass:[NSArray class]])) {
+        return;
+    };
+//  Navigation logic may go here. Create and push another view controller.
     NSString * title = self.title;
     id obj = _data;
     id selectedObjet = nil;
     if ([_data isKindOfClass:[NSArray class]]){
         obj = _data[indexPath.section];
     }
-    
+    selectedObjet = obj;
     if ([obj isKindOfClass:[NSDictionary class]]){
         NSString * key = [obj allKeys][indexPath.row];
         selectedObjet = obj[key];
@@ -147,14 +172,40 @@
         title = [NSString stringWithFormat:@"%@-%i",self.title, indexPath.row];
     }
     
-    if ( !([selectedObjet isKindOfClass:[NSDictionary class]] || [selectedObjet isKindOfClass:[NSArray class]])) return;
-    
     SEJSONViewController *detailViewController = [[SEJSONViewController alloc] initWithStyle:self.tableView.style];
     [detailViewController setData:selectedObjet];
     detailViewController.title = title;
     // ...
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
+    
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ( !([_data isKindOfClass:[NSDictionary class]] || [_data isKindOfClass:[NSArray class]])) {
+        CGSize size = [_label  sizeThatFits:CGSizeMake(self.tableView.frame.size.width-(2*Padding),  	CGFLOAT_MAX)];
+        CGRect frame = _label.frame;
+        frame.size = size;
+        _label.frame = frame;
+        return size.height+Padding;
+    } else {
+        return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+    }
+}
+
+- (void) setupForLeaf:(id) data{
+    
+    NSString * text = [data description];
+    _textViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Leaf"];
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(Padding, Padding, 320-Padding, 44)];
+    [_textViewCell.contentView addSubview:_label];
+    _label.font = [UIFont systemFontOfSize:20];
+    _label.numberOfLines = 0;
+    _label.text = text;
+    _label.contentMode = UIViewContentModeRedraw;
+    _label.lineBreakMode = NSLineBreakByClipping;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _textViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     
 }
 

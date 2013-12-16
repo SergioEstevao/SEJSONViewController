@@ -15,6 +15,10 @@
  */
 @interface SEJSONViewController : UITableViewController
 
+- initWithData:(id) data;
+
+- (id)initWithStyle:(UITableViewStyle)style data:(id) data;
+
 - (void) setData:(id)data;
 
 @end

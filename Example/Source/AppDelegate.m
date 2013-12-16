@@ -17,12 +17,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    // Initialize the view controller
-    SEJSONViewController * jsonViewController = [[SEJSONViewController alloc] init];
     // Read the JSON data
     id data = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"data" withExtension:@"json"]] options:NSJSONReadingAllowFragments error:nil];
-    // Setup the data to the controller
-    [jsonViewController setData:data];
+    // Initialize the view controller
+    SEJSONViewController * jsonViewController = [[SEJSONViewController alloc] initWithData:data];
     // display it inside a UINavigationController
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:jsonViewController ];
     [self.window makeKeyAndVisible];
