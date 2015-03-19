@@ -122,7 +122,7 @@ static const CGFloat Padding = 20;
             cell.detailTextLabel.text = [subObj description];
         }
     } else if ([obj isKindOfClass:[NSArray class]]) {
-        cell.textLabel.text = [NSString stringWithFormat:@"%i",indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%li",(long)indexPath.row];
         cell.detailTextLabel.text = @"";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } else {
@@ -138,7 +138,7 @@ static const CGFloat Padding = 20;
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if ([[_data class] isSubclassOfClass:[NSArray class]]){
-        return [NSString stringWithFormat:@"%i",section];
+        return [NSString stringWithFormat:@"%li",(long)section];
     }
     //check if leaf node
     if ( !([_data isKindOfClass:[NSDictionary class]] || [_data isKindOfClass:[NSArray class]])) {
@@ -170,7 +170,7 @@ static const CGFloat Padding = 20;
         title = key;
     }  else if ([obj isKindOfClass:[NSArray class]]) {
         selectedObjet = obj[indexPath.row];
-        title = [NSString stringWithFormat:@"%@-%i",self.title, indexPath.row];
+        title = [NSString stringWithFormat:@"%@-%li",self.title, (long)indexPath.row];
     }
     
     SEJSONViewController *detailViewController = [[SEJSONViewController alloc] initWithStyle:self.tableView.style];
